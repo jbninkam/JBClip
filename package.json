@@ -1,18 +1,18 @@
 {
-  "name": "jb-clip",
-  "productName": "JB Clip",
+  "name": "jbclip",
+  "productName": "JBClip",
   "version": "0.1.16",
-  "description": "JB Clip: open-source AI video clipping by JB Ninkam, based on BridgeClip. Turn long videos into captioned short-form clips, locally, with your own API keys.",
+  "description": "JBClip: open-source AI video clipping by JB Ninkam, based on BridgeClip. Turn long videos into captioned short-form clips, locally, with your own API keys.",
   "main": "./out/main/index.js",
   "author": "JB Ninkam",
   "license": "MIT",
-  "homepage": "https://github.com/jbninkam/jb-clip",
+  "homepage": "https://github.com/jbninkam/JBClip",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbninkam/jb-clip.git"
+    "url": "https://github.com/jbninkam/JBClip.git"
   },
   "bugs": {
-    "url": "https://github.com/jbninkam/jb-clip/issues"
+    "url": "https://github.com/jbninkam/JBClip/issues"
   },
   "scripts": {
     "dev": "electron-vite dev",

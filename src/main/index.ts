@@ -82,7 +82,7 @@ function createWindow(): void {
     minWidth: 720,
     minHeight: 520,
     show: false,
-    title: 'JB Clip',
+    title: 'JBClip',
     icon: is.dev ? devIcon : undefined,
     // macOS-only window chrome: 'hiddenInset' and trafficLightPosition are
     // ignored on other platforms, so only pass them on darwin.

@@ -1,5 +1,5 @@
 appId: com.jbninkam.jbclip
-productName: JB Clip
+productName: JBClip
 copyright: Copyright © 2026 JB Ninkam. Based on BridgeClip by BridgeMind LLC.
 
 # Disable production debug/code-injection entry points and validate app.asar.
@@ -111,4 +111,4 @@ nsis:
 publish:
   provider: github
   owner: jbninkam
-  repo: jb-clip
+  repo: JBClip

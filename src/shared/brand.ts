@@ -1,9 +1,9 @@
 // Single source for product identity, shared by the main process (menu,
 // window title) and the renderer.
-export const APP_NAME = 'JB Clip'
+export const APP_NAME = 'JBClip'
 export const APP_TAGLINE = 'Open-source AI video clipping'
 
-export const REPO_URL = 'https://github.com/jbninkam/jb-clip'
+export const REPO_URL = 'https://github.com/jbninkam/JBClip'
 export const ISSUES_URL = `${REPO_URL}/issues`
 export const LICENSE_NAME = 'MIT'
 export const BRIDGEMIND_URL = 'https://www.bridgemind.ai'

@@ -3,8 +3,8 @@ import { appendFileSync, chmodSync, existsSync, mkdirSync, renameSync, statSync 
 import { join } from 'path'
 
 // Simple structured JSON-lines logger that writes to app.getPath('logs').
-// On macOS that is ~/Library/Logs/JB Clip/jbclip.log.
-// On Windows that is %APPDATA%\JB Clip\logs\jbclip.log.
+// On macOS that is ~/Library/Logs/JBClip/jbclip.log.
+// On Windows that is %APPDATA%\JBClip\logs\jbclip.log.
 //
 // Why a custom logger instead of electron-log: zero new dependencies, and we
 // only need info/warn/error + bounded rotation. Good enough for diagnostics.

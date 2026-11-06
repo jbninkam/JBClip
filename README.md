@@ -1,30 +1,30 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="resources/bridgeclip-logo.svg" />
-    <img src="resources/bridgeclip-logo-light.svg" alt="JB Clip" height="56" />
+    <img src="resources/bridgeclip-logo-light.svg" alt="JBClip" height="56" />
   </picture>
 </p>
 
 <h3 align="center">Turn long videos into captioned short-form clips, on your own computer.</h3>
 
 <p align="center">
-  JB Clip is an open-source AI clipping app by JB Ninkam, based on <a href="https://github.com/bridge-mind/bridgeclip">BridgeClip</a>.
-  Drop in a podcast, stream, YouTube link or Twitch VOD link, and JB Clip finds the strongest moments,
+  JBClip is an open-source AI clipping app by JB Ninkam, based on <a href="https://github.com/bridge-mind/bridgeclip">BridgeClip</a>.
+  Drop in a podcast, stream, YouTube link or Twitch VOD link, and JBClip finds the strongest moments,
   cuts them to 9:16 or 16:9, and burns in word-by-word captions.
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" /></a>
-  <a href="https://github.com/jbninkam/jb-clip/releases"><img src="https://img.shields.io/github/v/release/jbninkam/jb-clip?label=download" alt="Latest release" /></a>
+  <a href="https://github.com/jbninkam/JBClip/releases"><img src="https://img.shields.io/github/v/release/jbninkam/JBClip?label=download" alt="Latest release" /></a>
   <a href="https://www.bridgemind.ai/discord"><img src="https://img.shields.io/badge/Discord-builders-5865F2?logo=discord&logoColor=white" alt="Discord" /></a>
 </p>
 
 ---
 
-## Why JB Clip?
+## Why JBClip?
 
-- **No BridgeMind account or backend.** JB Clip runs on your machine and calls OpenRouter directly with your own provider accounts and keys. Optional social account connections use your Zernio account and API key. Your videos and keys do not pass through a BridgeMind server.
-- **Pay only for what you use.** Transcription and clip planning bill your OpenRouter account at their prices. Rendering happens locally with FFmpeg. JB Clip shows estimated API cost when the providers return usable usage data.
+- **No BridgeMind account or backend.** JBClip runs on your machine and calls OpenRouter directly with your own provider accounts and keys. Optional social account connections use your Zernio account and API key. Your videos and keys do not pass through a BridgeMind server.
+- **Pay only for what you use.** Transcription and clip planning bill your OpenRouter account at their prices. Rendering happens locally with FFmpeg. JBClip shows estimated API cost when the providers return usable usage data.
 - **Captions that look native.** Nine styles (Viral, Hormozi, Bold, Clean, Minimal, Fire, Glow, Neon, Karaoke), each with a live preview before you render.
 - **MIT licensed.** Fork it, change it, ship it.
 
@@ -49,7 +49,7 @@ On first launch, paste your OpenRouter key into the setup card:
 | --- | --- | --- |
 | OpenRouter | MAI Transcribe 2 transcription and choosing the moments to clip | [openrouter.ai](https://openrouter.ai/keys) |
 
-Keys are encrypted with your operating system's secure storage. If secure storage is unavailable, JB Clip asks you to configure or unlock it before saving keys.
+Keys are encrypted with your operating system's secure storage. If secure storage is unavailable, JBClip asks you to configure or unlock it before saving keys.
 
 ### What leaves your computer
 
@@ -72,15 +72,15 @@ Live channels, Twitch clips, collections, subscriber-only videos and deleted or 
 **Prerequisites:** Node.js 22, Python 3.12, and FFmpeg with the libass-backed `ass` filter for captions. The clipping engine, model, fonts, and locked Python dependencies are included in this repository. In development, BridgeClip uses FFmpeg from `engine-bin/` when it exists, then falls back to your `PATH`. Provider keys are needed for live jobs, not tests.
 
 ```bash
-git clone https://github.com/jbninkam/jb-clip
-cd jb-clip
+git clone https://github.com/jbninkam/JBClip
+cd JBClip
 python3.12 -m venv engine/.venv
 engine/.venv/bin/pip install --require-hashes -r engine/requirements.lock
 npm ci
 npm run dev
 ```
 
-JB Clip finds its in-repo engine and virtual environment automatically. **Settings → System check** shows the Python, yt-dlp, FFmpeg, and engine checks; set **Python path** in development if you use another interpreter.
+JBClip finds its in-repo engine and virtual environment automatically. **Settings → System check** shows the Python, yt-dlp, FFmpeg, and engine checks; set **Python path** in development if you use another interpreter.
 
 On Linux, use system FFmpeg with the libass-backed `ass` filter (`ffmpeg -hide_banner -filters | grep -E '[[:space:]]ass[[:space:]]'`) and Python 3.12. Arch: `sudo pacman -S ffmpeg`. Skip `scripts/prepare-resources.sh` during development; it prepares macOS release resources. Linux development and tests are supported, but a self-contained Linux package is not yet available.
 

@@ -181,7 +181,7 @@ export function registerIpcHandlers(getMainWindow: () => BrowserWindow | null): 
       const pythonValidation = await validatePython(pythonPath, enginePath)
       if (!pythonValidation.ok) {
         lastEngineCheck = null
-        return { error: 'The clipping engine is incomplete or incompatible. Open Settings → System check, then repair the JB Clip installation before starting.' }
+        return { error: 'The clipping engine is incomplete or incompatible. Open Settings → System check, then repair the JBClip installation before starting.' }
       }
       lastEngineCheck = { key: engineKey, at: Date.now() }
     }
