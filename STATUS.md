@@ -25,4 +25,4 @@ Le dépôt et l'application s'appellent JBClip, le démarrage fonctionne sur Win
 
 ## Prochaine action
 
-Reproduire l'échec du runner Windows avec les logs complets, puis corriger sa cause racine et ajouter un test de non-régression.
+Installer les dépendances Python du moteur, puis lancer un premier traitement réel pour vérifier le runner.
