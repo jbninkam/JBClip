@@ -25,4 +25,4 @@ Le dépôt et l'application s'appellent JB Clip, le démarrage fonctionne sur Wi
 
 ## Prochaine action
 
-Renommer l'identité du paquet et vérifier le build Windows avant de poursuivre le diagnostic du runner.
+Reproduire l'échec du runner Windows avec les logs complets, puis corriger sa cause racine et ajouter un test de non-régression.
