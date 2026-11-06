@@ -10,6 +10,7 @@
 - [x] Installer les dépendances Python verrouillées dans `engine\.venv`.
 - [x] Vérifier `cv2`, `fastapi`, `yt_dlp` et le smart framing (`SMART_FRAMING=True`).
 - [x] Intégrer le logo JBClip horizontal, compact et carré, ainsi que l'icône Windows.
+- [x] Corriger le transport UTF-8 des chemins Windows accentués vers le bridge.
 - [ ] Reproduire et corriger l'échec du runner BridgeClip.
 
 ## PRODUCTION

@@ -128,6 +128,19 @@ class BridgeTests(unittest.TestCase):
         with patch.object(sys, "argv", ["bridge_runner.py"]), patch.object(sys, "stdin", io.StringIO(" " * 65537)), redirect_stdout(io.StringIO()):
             self.assertEqual(bridge.main(), 1)
 
+    def test_stdin_transport_decodes_utf8_paths_on_windows(self):
+        async def success(config):
+            self.assertIn("façon", config["video_url"])
+            return True
+
+        with tempfile.TemporaryDirectory() as directory:
+            source = os.path.join(directory, "façon.mp4")
+            open(source, "wb").close()
+            payload = json.dumps(self.config(video_url=source)).encode("utf-8")
+            stdin = io.TextIOWrapper(io.BytesIO(payload), encoding="cp1252")
+            with patch.object(sys, "argv", ["bridge_runner.py"]), patch.object(sys, "stdin", stdin), patch.object(bridge, "run", success):
+                self.assertEqual(bridge.main(), 0)
+
     def test_provider_errors_do_not_disclose_exception_text(self):
         output = io.StringIO()
         async def fail(config):

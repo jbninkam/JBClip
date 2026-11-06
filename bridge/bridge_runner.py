@@ -142,6 +142,14 @@ def emit(msg: dict) -> None:
     stream.flush()
 
 
+def read_stdin_config() -> str:
+    """Read Electron's UTF-8 JSON without using Windows' legacy code page."""
+    stream = getattr(sys.stdin, "buffer", None)
+    if stream is None:
+        return sys.stdin.read(65537)
+    return stream.read(65537).decode("utf-8")
+
+
 def progress_callback(progress) -> None:
     """Forward pipeline progress as JSON-line."""
     emit({
@@ -335,7 +343,7 @@ def main() -> int:
     try:
         # Legacy CLI argument remains accepted; Electron uses stdin to keep
         # private source URLs out of process listings. Bound either transport.
-        raw = sys.argv[1] if len(sys.argv) == 2 else sys.stdin.read(65537)
+        raw = sys.argv[1] if len(sys.argv) == 2 else read_stdin_config()
         if len(raw) > 65536:
             raise ValueError("Config too large")
         config = validate_config(json.loads(raw))

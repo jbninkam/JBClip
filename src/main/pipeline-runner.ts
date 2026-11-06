@@ -407,6 +407,7 @@ export function startClipJob(
     ...envVars,
     PYTHONPATH: enginePath,
     BRIDGECLIP_WORK_ROOT: jobWorkRoot,
+    PYTHONUTF8: '1',
     PYTHONUNBUFFERED: '1',
     PYTHONDONTWRITEBYTECODE: '1'
   }
