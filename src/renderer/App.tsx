@@ -8,7 +8,7 @@ import { SettingsPage } from './pages/SettingsPage'
 import { AccountsPage } from './pages/AccountsPage'
 import { AutomationsPage } from './pages/AutomationsPage'
 import { UpdateModal } from './components/UpdateModal'
-import { BridgeClipLogo } from './components/brand/BridgeClipLogo'
+import { JBClipLogo } from './components/brand/JBClipLogo'
 import { useSettingsStore } from './store/use-settings-store'
 import { useJobStore } from './store/use-job-store'
 import { useSidebarStore } from './store/use-sidebar-store'
@@ -83,7 +83,7 @@ export default function App(): React.JSX.Element {
               <p role="alert" className="text-sm text-danger">Could not load settings. Please try again.</p>
               <Button onClick={() => setRetry((value) => value + 1)}>Retry</Button>
             </div>
-          ) : <BridgeClipLogo className="h-7 animate-pulse opacity-80" />}
+          ) : <JBClipLogo className="h-7 animate-pulse opacity-80" />}
         </div>
       )}
       <UpdateModal />

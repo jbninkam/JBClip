@@ -1,7 +1,6 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="resources/bridgeclip-logo.svg" />
-    <img src="resources/bridgeclip-logo-light.svg" alt="JBClip" height="56" />
+    <img src="resources/jbclip-logo.png" alt="JBClip" height="56" />
   </picture>
 </p>
 

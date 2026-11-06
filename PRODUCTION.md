@@ -9,6 +9,7 @@
 - [x] Démarrer JBClip en mode développement et vérifier le boot Electron.
 - [x] Installer les dépendances Python verrouillées dans `engine\.venv`.
 - [x] Vérifier `cv2`, `fastapi`, `yt_dlp` et le smart framing (`SMART_FRAMING=True`).
+- [x] Intégrer le logo JBClip horizontal, compact et carré, ainsi que l'icône Windows.
 - [ ] Reproduire et corriger l'échec du runner BridgeClip.
 
 ## PRODUCTION

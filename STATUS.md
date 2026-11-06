@@ -25,4 +25,4 @@ Le dépôt et l'application s'appellent JBClip, le démarrage fonctionne sur Win
 
 ## Prochaine action
 
-Lancer un premier traitement réel pour vérifier le runner, puis traiter séparément les tests Windows hérités qui utilisent `ProactorEventLoop`.
+Lancer un premier traitement réel pour vérifier le runner, puis traiter séparément les tests Windows hérités qui utilisent `ProactorEventLoop`. La nouvelle identité JBClip est intégrée.

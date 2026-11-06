@@ -7,7 +7,7 @@ import { cn, errorMessage } from '../lib/utils'
 import { APP_NAME, APP_VERSION, BRIDGEMIND_URL, ISSUES_URL, LICENSE_NAME, PROVIDER_LINKS, REPO_URL } from '../config/brand'
 import type { ClipSettings, ToolStatus } from '../../preload/index'
 import { ApiKeyInput } from '../components/ApiKeyInput'
-import { BridgeClipLogo } from '../components/brand/BridgeClipLogo'
+import { JBClipLogo } from '../components/brand/JBClipLogo'
 import { Page } from '../components/ui/Page'
 import { PageHeader } from '../components/ui/PageHeader'
 import { Panel, PanelHeader } from '../components/ui/Panel'
@@ -213,7 +213,7 @@ export function SettingsPage(): React.JSX.Element {
 
           <Section id="about" className="overflow-hidden">
             <div className="flex flex-wrap items-center gap-4">
-              <BridgeClipLogo variant="icon" className="-m-1 h-12" />
+              <JBClipLogo variant="icon" className="-m-1 h-12" />
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2.5">
                   <h2 className="text-base font-semibold tracking-[-0.01em] text-ink">{APP_NAME}</h2>

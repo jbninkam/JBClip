@@ -133,7 +133,7 @@ Depth, back to front: `app-backdrop` → `glass` panel → `glass-tile` / `glass
 | `Skeleton` | Flat loading block that pulses. |
 | `Dialog` / `DialogFooter` | Dimmed, blurred backdrop and a `glass-thick` panel (`layer="system"` for the update prompt). Callers own focus trapping and Escape. |
 
-Brand: `components/brand/BridgeClipLogo` renders the lockup (`variant="lockup"`, size by height), the app-icon tile (`variant="icon"`) or the mark alone (`variant="mark"`, for the icon rail). The mark is the one exception to the flat rule: `resources/bridgemind-mark.svg` embeds the official BridgeMind symbol, the same shaded artwork bridgemind.ai uses, and is the single source, and `scripts/icon/build-logo.py` and `scripts/icon/build-icons.sh` regenerate the lockups and app icons from it. Edit the source, not the outputs.
+Brand: `components/brand/JBClipLogo` renders the JBClip lockup (`variant="lockup"`, size by height), the app-icon tile (`variant="icon"`) or the compact mark (`variant="mark"`, for the icon rail). The source artwork is `resources/jbclip-logo.png`, with derived `jbclip-mark.png` and `jbclip-icon.png` variants. Edit the source artwork and regenerate the derived assets when the logo changes.
 
 ---
 
