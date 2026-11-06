@@ -25,4 +25,4 @@ Le dépôt et l'application s'appellent JBClip, le démarrage fonctionne sur Win
 
 ## Prochaine action
 
-Installer les dépendances Python du moteur, puis lancer un premier traitement réel pour vérifier le runner.
+Lancer un premier traitement réel pour vérifier le runner, puis traiter séparément les tests Windows hérités qui utilisent `ProactorEventLoop`.

@@ -7,7 +7,8 @@
 - [x] Installer les dépendances avec `npm ci`.
 - [x] Vérifier le type-check et le build Electron avec `npm run typecheck` et `npm run build`.
 - [x] Démarrer JBClip en mode développement et vérifier le boot Electron.
-- [ ] Installer les dépendances Python du moteur.
+- [x] Installer les dépendances Python verrouillées dans `engine\.venv`.
+- [x] Vérifier `cv2`, `fastapi`, `yt_dlp` et le smart framing (`SMART_FRAMING=True`).
 - [ ] Reproduire et corriger l'échec du runner BridgeClip.
 
 ## PRODUCTION
