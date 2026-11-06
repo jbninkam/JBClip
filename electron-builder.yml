@@ -1,6 +1,6 @@
-appId: com.bridgemind.bridgeclip
-productName: BridgeClip
-copyright: Copyright © 2026 BridgeMind LLC
+appId: com.jbninkam.jbclip
+productName: JB Clip
+copyright: Copyright © 2026 JB Ninkam. Based on BridgeClip by BridgeMind LLC.
 
 # Disable production debug/code-injection entry points and validate app.asar.
 electronFuses:
@@ -110,5 +110,5 @@ nsis:
 # latest-mac.yml / latest.yml from the newest published (non-draft) release.
 publish:
   provider: github
-  owner: bridge-mind
-  repo: bridgeclip
+  owner: jbninkam
+  repo: jb-clip
